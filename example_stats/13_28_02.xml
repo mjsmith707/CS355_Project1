@@ -1,0 +1,59 @@
+<?xml version="1.0"?><?xml-stylesheet type="text/xsl" href="../../../basics/stats141.xsl"?>
+<match id="0" datetime="2015/03/30 13:28:02" map="CPM3A" type="1v1" isTeamGame="false" >
+
+<player name="100.Major">
+<stat name="Score" value="11"/>
+<stat name="Kills" value="11"/>
+<stat name="Deaths" value="9"/>
+<stat name="Suicides" value="0"/>
+<stat name="Net" value="2"/>
+<stat name="DamageGiven" value="4722"/>
+<stat name="DamageTaken" value="4221"/>
+<weapons>
+<weapon name="MG" hits="37" shots="51" kills="1"/>
+<weapon name="SG" hits="14" shots="96" kills="0"/>
+<weapon name="RL" hits="56" shots="110" kills="7"/>
+<weapon name="LG" hits="25" shots="54" kills="1"/>
+<weapon name="RG" hits="11" shots="17" kills="2"/>
+<weapon name="PG" hits="8" shots="13" kills="0"/>
+</weapons>
+<stat name="HealthTotal" value="1680"/>
+<stat name="ArmorTotal" value="2890"/>
+<items>
+<item name="MH" pickups="9"/>
+<item name="RA" pickups="10"/>
+<item name="YA" pickups="12"/>
+<item name="GA" pickups="0"/>
+</items>
+<powerups>
+</powerups>
+</player>
+
+<player name="100.Ranger">
+<stat name="Score" value="8"/>
+<stat name="Kills" value="9"/>
+<stat name="Deaths" value="11"/>
+<stat name="Suicides" value="1"/>
+<stat name="Net" value="-3"/>
+<stat name="DamageGiven" value="4221"/>
+<stat name="DamageTaken" value="4722"/>
+<weapons>
+<weapon name="MG" hits="44" shots="127" kills="1"/>
+<weapon name="SG" hits="4" shots="16" kills="0"/>
+<weapon name="RL" hits="50" shots="108" kills="6"/>
+<weapon name="LG" hits="8" shots="29" kills="0"/>
+<weapon name="RG" hits="13" shots="14" kills="2"/>
+<weapon name="PG" hits="1" shots="3" kills="0"/>
+</weapons>
+<stat name="HealthTotal" value="1220"/>
+<stat name="ArmorTotal" value="3020"/>
+<items>
+<item name="MH" pickups="3"/>
+<item name="RA" pickups="9"/>
+<item name="YA" pickups="14"/>
+<item name="GA" pickups="0"/>
+</items>
+<powerups>
+</powerups>
+</player>
+</match>

@@ -1,0 +1,57 @@
+<?xml version="1.0"?><?xml-stylesheet type="text/xsl" href="../../../basics/stats141.xsl"?>
+<match id="0" datetime="2015/03/30 13:12:20" map="CPM22" type="1v1" isTeamGame="false" >
+
+<player name="100.rat">
+<stat name="Score" value="18"/>
+<stat name="Kills" value="21"/>
+<stat name="Deaths" value="11"/>
+<stat name="Suicides" value="3"/>
+<stat name="Net" value="7"/>
+<stat name="DamageGiven" value="6166"/>
+<stat name="DamageTaken" value="4375"/>
+<weapons>
+<weapon name="MG" hits="64" shots="122" kills="1"/>
+<weapon name="GL" hits="2" shots="54" kills="0"/>
+<weapon name="RL" hits="85" shots="169" kills="18"/>
+<weapon name="LG" hits="3" shots="26" kills="0"/>
+<weapon name="RG" hits="12" shots="23" kills="2"/>
+</weapons>
+<stat name="HealthTotal" value="1710"/>
+<stat name="ArmorTotal" value="2150"/>
+<items>
+<item name="MH" pickups="9"/>
+<item name="RA" pickups="2"/>
+<item name="YA" pickups="8"/>
+<item name="GA" pickups="21"/>
+</items>
+<powerups>
+</powerups>
+</player>
+
+<player name="100.Crash">
+<stat name="Score" value="10"/>
+<stat name="Kills" value="11"/>
+<stat name="Deaths" value="21"/>
+<stat name="Suicides" value="1"/>
+<stat name="Net" value="-11"/>
+<stat name="DamageGiven" value="4375"/>
+<stat name="DamageTaken" value="6166"/>
+<weapons>
+<weapon name="MG" hits="225" shots="504" kills="2"/>
+<weapon name="SG" hits="350" shots="1088" kills="7"/>
+<weapon name="GL" hits="0" shots="5" kills="0"/>
+<weapon name="RL" hits="23" shots="61" kills="2"/>
+<weapon name="RG" hits="0" shots="1" kills="0"/>
+</weapons>
+<stat name="HealthTotal" value="1550"/>
+<stat name="ArmorTotal" value="2450"/>
+<items>
+<item name="MH" pickups="7"/>
+<item name="RA" pickups="3"/>
+<item name="YA" pickups="12"/>
+<item name="GA" pickups="16"/>
+</items>
+<powerups>
+</powerups>
+</player>
+</match>

@@ -1,0 +1,60 @@
+<?xml version="1.0"?><?xml-stylesheet type="text/xsl" href="../../../basics/stats141.xsl"?>
+<match id="0" datetime="2015/03/30 12:20:00" map="CPM15" type="1v1" isTeamGame="false" >
+
+<player name="100.Keel">
+<stat name="Score" value="15"/>
+<stat name="Kills" value="16"/>
+<stat name="Deaths" value="8"/>
+<stat name="Suicides" value="1"/>
+<stat name="Net" value="7"/>
+<stat name="DamageGiven" value="4522"/>
+<stat name="DamageTaken" value="3501"/>
+<weapons>
+<weapon name="MG" hits="18" shots="80" kills="0"/>
+<weapon name="GL" hits="1" shots="6" kills="0"/>
+<weapon name="RL" hits="22" shots="49" kills="6"/>
+<weapon name="LG" hits="0" shots="1" kills="0"/>
+<weapon name="RG" hits="38" shots="51" kills="10"/>
+<weapon name="PG" hits="0" shots="2" kills="0"/>
+</weapons>
+<stat name="HealthTotal" value="1460"/>
+<stat name="ArmorTotal" value="1935"/>
+<items>
+<item name="MH" pickups="7"/>
+<item name="RA" pickups="0"/>
+<item name="YA" pickups="17"/>
+<item name="GA" pickups="0"/>
+</items>
+<powerups>
+</powerups>
+</player>
+
+<player name="100.Ranger">
+<stat name="Score" value="6"/>
+<stat name="Kills" value="8"/>
+<stat name="Deaths" value="16"/>
+<stat name="Suicides" value="2"/>
+<stat name="Net" value="-10"/>
+<stat name="DamageGiven" value="3501"/>
+<stat name="DamageTaken" value="4522"/>
+<weapons>
+<weapon name="MG" hits="24" shots="105" kills="0"/>
+<weapon name="SG" hits="6" shots="32" kills="0"/>
+<weapon name="GL" hits="0" shots="1" kills="0"/>
+<weapon name="RL" hits="40" shots="71" kills="6"/>
+<weapon name="LG" hits="24" shots="46" kills="0"/>
+<weapon name="RG" hits="8" shots="14" kills="2"/>
+<weapon name="PG" hits="5" shots="9" kills="0"/>
+</weapons>
+<stat name="HealthTotal" value="1415"/>
+<stat name="ArmorTotal" value="1540"/>
+<items>
+<item name="MH" pickups="6"/>
+<item name="RA" pickups="0"/>
+<item name="YA" pickups="12"/>
+<item name="GA" pickups="0"/>
+</items>
+<powerups>
+</powerups>
+</player>
+</match>

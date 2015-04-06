@@ -1,0 +1,61 @@
+<?xml version="1.0"?><?xml-stylesheet type="text/xsl" href="../../../basics/stats141.xsl"?>
+<match id="0" datetime="2015/03/30 13:27:17" map="CPM3A" type="1v1" isTeamGame="false" >
+
+<player name="100.rat">
+<stat name="Score" value="11"/>
+<stat name="Kills" value="11"/>
+<stat name="Deaths" value="9"/>
+<stat name="Suicides" value="1"/>
+<stat name="Net" value="1"/>
+<stat name="DamageGiven" value="4512"/>
+<stat name="DamageTaken" value="4629"/>
+<weapons>
+<weapon name="MG" hits="42" shots="99" kills="0"/>
+<weapon name="SG" hits="5" shots="32" kills="0"/>
+<weapon name="GL" hits="2" shots="30" kills="0"/>
+<weapon name="RL" hits="52" shots="109" kills="8"/>
+<weapon name="LG" hits="48" shots="144" kills="1"/>
+<weapon name="RG" hits="10" shots="12" kills="2"/>
+<weapon name="PG" hits="0" shots="1" kills="0"/>
+</weapons>
+<stat name="HealthTotal" value="1420"/>
+<stat name="ArmorTotal" value="3155"/>
+<items>
+<item name="MH" pickups="2"/>
+<item name="RA" pickups="10"/>
+<item name="YA" pickups="14"/>
+<item name="GA" pickups="0"/>
+</items>
+<powerups>
+</powerups>
+</player>
+
+<player name="100.arQon">
+<stat name="Score" value="7"/>
+<stat name="Kills" value="9"/>
+<stat name="Deaths" value="11"/>
+<stat name="Suicides" value="2"/>
+<stat name="Net" value="-4"/>
+<stat name="DamageGiven" value="4629"/>
+<stat name="DamageTaken" value="4512"/>
+<weapons>
+<weapon name="MG" hits="24" shots="91" kills="0"/>
+<weapon name="SG" hits="41" shots="144" kills="2"/>
+<weapon name="GL" hits="0" shots="7" kills="0"/>
+<weapon name="RL" hits="60" shots="124" kills="7"/>
+<weapon name="LG" hits="16" shots="25" kills="0"/>
+<weapon name="RG" hits="7" shots="9" kills="0"/>
+<weapon name="PG" hits="2" shots="4" kills="0"/>
+</weapons>
+<stat name="HealthTotal" value="1375"/>
+<stat name="ArmorTotal" value="2700"/>
+<items>
+<item name="MH" pickups="9"/>
+<item name="RA" pickups="10"/>
+<item name="YA" pickups="10"/>
+<item name="GA" pickups="0"/>
+</items>
+<powerups>
+</powerups>
+</player>
+</match>

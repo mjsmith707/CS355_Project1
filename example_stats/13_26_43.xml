@@ -1,0 +1,59 @@
+<?xml version="1.0"?><?xml-stylesheet type="text/xsl" href="../../../basics/stats141.xsl"?>
+<match id="0" datetime="2015/03/30 13:26:43" map="CPM3A" type="1v1" isTeamGame="false" >
+
+<player name="100.Apheleon">
+<stat name="Score" value="16"/>
+<stat name="Kills" value="17"/>
+<stat name="Deaths" value="11"/>
+<stat name="Suicides" value="1"/>
+<stat name="Net" value="5"/>
+<stat name="DamageGiven" value="5322"/>
+<stat name="DamageTaken" value="4584"/>
+<weapons>
+<weapon name="MG" hits="16" shots="47" kills="1"/>
+<weapon name="SG" hits="32" shots="96" kills="1"/>
+<weapon name="GL" hits="4" shots="66" kills="0"/>
+<weapon name="RL" hits="22" shots="43" kills="3"/>
+<weapon name="LG" hits="195" shots="444" kills="8"/>
+<weapon name="RG" hits="22" shots="32" kills="4"/>
+</weapons>
+<stat name="HealthTotal" value="1145"/>
+<stat name="ArmorTotal" value="3335"/>
+<items>
+<item name="MH" pickups="5"/>
+<item name="RA" pickups="13"/>
+<item name="YA" pickups="12"/>
+<item name="GA" pickups="0"/>
+</items>
+<powerups>
+</powerups>
+</player>
+
+<player name="100.Xaero">
+<stat name="Score" value="11"/>
+<stat name="Kills" value="11"/>
+<stat name="Deaths" value="17"/>
+<stat name="Suicides" value="1"/>
+<stat name="Net" value="-7"/>
+<stat name="DamageGiven" value="4584"/>
+<stat name="DamageTaken" value="5322"/>
+<weapons>
+<weapon name="MG" hits="48" shots="105" kills="1"/>
+<weapon name="SG" hits="31" shots="96" kills="0"/>
+<weapon name="RL" hits="23" shots="56" kills="3"/>
+<weapon name="LG" hits="30" shots="37" kills="1"/>
+<weapon name="RG" hits="31" shots="44" kills="6"/>
+<weapon name="PG" hits="2" shots="7" kills="0"/>
+</weapons>
+<stat name="HealthTotal" value="1605"/>
+<stat name="ArmorTotal" value="2340"/>
+<items>
+<item name="MH" pickups="7"/>
+<item name="RA" pickups="5"/>
+<item name="YA" pickups="14"/>
+<item name="GA" pickups="0"/>
+</items>
+<powerups>
+</powerups>
+</player>
+</match>

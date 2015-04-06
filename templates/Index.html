@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+    <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+    <title>CPMA Maxstats</title>
+</head>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+		<a class="navbar-brand" rel="home" href="http://www.playmorepromode.org" title="Play More Promode">
+		        <img style="max-width:100px; margin-top: -10px;"
+		             src="/images/cpma.png">
+		</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/">Home</a></li>
+                    <li><a href="/top100">Top 100</a></li>
+                    <li><a href="/latestmatches">Latest Matches</a></li>
+                    <li><a href="/projectrequirements">Project Requirements Page</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <h1>Top 10</h1>
+            <table class="table table-hover" style="text-align: left; width: 100%;" border="1" cellpadding="2" cellspacing="2">
+                <tbody>
+                    <tr>
+                        <td style="vertical-align: top; font-weight: bold;">Name
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; font-weight: bold;">Rank
+                            <br>
+                        </td>
+                        <td style="vertical-align: top;">Win %
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; font-weight: bold;">Games Played
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; font-weight: bold;">Games Won
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; font-weight: bold;">Games Lost
+                            <br>
+                        </td>
+                    </tr>
+                    $toprow
+                </tbody>
+            </table>
+        </div>
+        <div class="row">
+            <h1>Recent Matches</h1>
+            <table class="table table-hover" style="text-align: left; width: 100%;" border="1" cellpadding="2" cellspacing="2">
+                <tbody>
+                    <tr>
+                        <td style="vertical-align: top; font-weight: bold;">Winner
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; font-weight: bold;">P1 Score
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; font-weight: bold;">P2 Score
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; font-weight: bold;">Loser
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; font-weight: bold;">Map
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; font-weight: bold;">Date
+                            <br>
+                        </td>
+                    </tr>
+                    $recentrow
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

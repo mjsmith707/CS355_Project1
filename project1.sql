@@ -1,0 +1,134 @@
+USE msmith;
+
+SET FOREIGN_KEY_CHECKS=0;
+DROP TABLE IF EXISTS WeaponStats;
+DROP TABLE IF EXISTS ItemStats;
+DROP TABLE IF EXISTS PlayerStats;
+DROP TABLE IF EXISTS DuelMatchStats;
+DROP TABLE IF EXISTS PlayersMatches;
+DROP TABLE IF EXISTS Matches;
+DROP TABLE IF EXISTS Players;
+SET FOREIGN_KEY_CHECKS=1;
+
+CREATE TABLE Players (
+	PlayerID INT UNIQUE PRIMARY KEY AUTO_INCREMENT,
+    Name VARCHAR(100) UNIQUE NOT NULL,
+    FirstSeen DATETIME NOT NULL,
+    LastSeen DATETIME NOT NULL,
+    ELO INT DEFAULT 1200,
+    PlayerStats INT UNIQUE REFERENCES PlayerStats(PlayerStatsID),
+    WeaponStats INT UNIQUE REFERENCES ItemStats(ItemStatsID),
+    ItemStats INT UNIQUE REFERENCES WeaponStats(WeaponStatsID)
+);
+
+CREATE TABLE Matches (
+	MatchID INT UNIQUE PRIMARY KEY AUTO_INCREMENT,
+    Datetime VARCHAR(100) UNIQUE NOT NULL,
+    Type VARCHAR(10) NOT NULL,
+    Map VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE PlayersMatches (
+	PlayerID INT,
+    MatchID INT,
+    FOREIGN KEY (PlayerID) REFERENCES Players(PlayerID) ON DELETE CASCADE,
+    FOREIGN KEY (MatchID) REFERENCES Matches(MatchID) ON DELETE CASCADE,
+    UNIQUE(PlayerID, MatchID)
+);
+
+CREATE TABLE PlayerStats (
+	PlayerStatsID INT UNIQUE PRIMARY KEY AUTO_INCREMENT,
+    PlayerID INT NOT NULL,
+    Score INT DEFAULT 0,
+    Kills INT DEFAULT 0,
+    Deaths INT DEFAULT 0,
+    Suicides INT DEFAULT 0,
+    Net INT DEFAULT 0,
+    DamageGiven INT DEFAULT 0,
+    DamageTaken INT DEFAULT 0,
+    Captures INT DEFAULT 0,
+    Assists INT DEFAULT 0,
+    Defense INT DEFAULT 0,
+    Returns INT DEFAULT 0,
+    HealthTotal INT DEFAULT 0,
+    ArmorTotal INT DEFAULT 0,
+    FOREIGN KEY (PlayerID) REFERENCES Players(PlayerID) ON DELETE CASCADE
+);
+
+CREATE TABLE ItemStats (
+	ItemStatsID INT UNIQUE PRIMARY KEY AUTO_INCREMENT,
+    PlayerID INT NOT NULL,
+    MHPickups INT DEFAULT 0,
+    RAPickups INT DEFAULT 0,
+    YAPickups INT DEFAULT 0,
+    GAPickups INT DEFAULT 0,
+    QuadPickups INT DEFAULT 0,
+    BSPickups INT DEFAULT 0,
+    InvisPickups INT DEFAULT 0,
+    FlightPickups INT DEFAULT 0,
+    RegenPickups INT DEFAULT 0,
+    FlagGrabs INT DEFAULT 0,
+    QuadTime INT DEFAULT 0,
+    BSTime INT DEFAULT 0,
+    InvisTime INT DEFAULT 0,
+    FlightTime INT DEFAULT 0,
+    RegenTime INT DEFAULT 0,
+    FlagTime INT DEFAULT 0,
+    FOREIGN KEY (PlayerID) REFERENCES Players(PlayerID) ON DELETE CASCADE
+);
+
+CREATE TABLE WeaponStats (
+	WeaponStatsID INT UNIQUE PRIMARY KEY AUTO_INCREMENT,
+    PlayerID INT NOT NULL,
+    GKills INT DEFAULT 0,
+    MGKills INT DEFAULT 0,
+    MGShots INT DEFAULT 0,
+    MGHits INT DEFAULT 0,
+    SGKills INT  DEFAULT 0,
+    SGShots INT DEFAULT 0,
+    SGHits INT DEFAULT 0,
+    PGKills INT DEFAULT 0,
+    PGShots INT DEFAULT 0,
+    PGHits INT DEFAULT 0,
+	RLKills INT DEFAULT 0,
+    RLShots INT DEFAULT 0,
+    RLHits INT DEFAULT 0,
+    LGKills INT DEFAULT 0,
+    LGShots INT DEFAULT 0,
+    LGHits INT DEFAULT 0,
+    RGKills INT DEFAULT 0,
+    RGShots INT DEFAULT 0,
+    RGHits INT DEFAULT 0,
+    BFGKills INT DEFAULT 0,
+    BFGShots INT DEFAULT 0,
+    BFGHits INT DEFAULT 0,
+    GLKills INT DEFAULT 0,
+    GLShots INT DEFAULT 0,
+    GLHits INT DEFAULT 0,
+    TFKills INT DEFAULT 0,
+    FOREIGN KEY (PlayerID) REFERENCES Players(PlayerID) ON DELETE CASCADE
+);
+
+CREATE TABLE DuelMatchStats (
+	MatchID INT UNIQUE,
+    Winner INT NOT NULL,
+    P1ELOChange INT NOT NULL,
+    P2ELOChange INT NOT NULL,
+    Player1ID INT,
+    Player2ID INT,
+    Player1StatsID INT,
+    Player2StatsID INT,
+	Player1ItemsID INT,
+    Player2ItemsID INT,
+    Player1WeaponsID INT,
+    Player2WeaponsID INT,
+    FOREIGN KEY (MatchID) REFERENCES Matches(MatchID) ON DELETE CASCADE,
+    FOREIGN KEY (Player1ID) REFERENCES Players(PlayerID) ON DELETE CASCADE,
+    FOREIGN KEY (Player2ID) REFERENCES Players(PlayerID) ON DELETE CASCADE,
+    FOREIGN KEY (Player1StatsID) REFERENCES PlayerStats(PlayerStatsID) ON DELETE CASCADE,
+    FOREIGN KEY (Player2StatsID) REFERENCES PlayerStats(PlayerStatsID) ON DELETE CASCADE,
+	FOREIGN KEY (Player1ItemsID) REFERENCES ItemStats(ItemStatsID) ON DELETE CASCADE,
+    FOREIGN KEY (Player2ItemsID) REFERENCES ItemStats(ItemStatsID) ON DELETE CASCADE,
+    FOREIGN KEY (Player1WeaponsID) REFERENCES WeaponStats(WeaponStatsID) ON DELETE CASCADE,
+    FOREIGN KEY (Player2WeaponsID) REFERENCES WeaponStats(WeaponStatsID) ON DELETE CASCADE
+);

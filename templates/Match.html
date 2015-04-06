@@ -1,0 +1,404 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+    <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+    <title>CPMA Maxstats</title>
+</head>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+		<a class="navbar-brand" rel="home" href="http://www.playmorepromode.org" title="Play More Promode">
+                        <img style="max-width:100px; margin-top: -10px;"
+                             src="/images/cpma.png">
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/top100">Top 100</a></li>
+                    <li><a href="/latestmatches">Latest Matches</a></li>
+		    <li><a href="/projectrequirements">Project Requirements Page</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h1 style="color: $p1colormod;text-align:right;">
+                    <img alt="$p1altmod" src="/images/$p1imgmod" style="text-align:right;">
+                        $p1elochange
+                        <a href="/player?PlayerID=$p1id">$p1name</a>
+                    </h1>
+                </div>
+                <div class="col-sm-4">
+                </div>
+                <div class="col-sm-4">
+                    <h1>
+                    	<a href="/player?PlayerID=$p2id">$p2name</a>
+                    	<div style="color: $p2colormod; display:inline;">
+				<img alt="$p2altmod" src="/images/$p2imgmod">
+                        		$p2elochange
+		    	</div>
+                    </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <h1 style="text-align:center; font-size:16px;">
+                        $p1elo
+                    </h1>
+                </div>
+                <div class="col-sm-4">
+                    <h1 style="text-align:center;">vs</h1>
+                </div>
+                <div class="col-sm-4">
+                    <h1 style="text-align:center; font-size:16px;">
+                        $p2elo
+                    </h1>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-4">
+                <h1 style="text-align:center;">$p1score - $p2score</h1>
+            </div>
+            <div class="col-sm-4">
+            </div>
+        </div>
+
+        <div class="row">
+
+            <table class="table table-hover" style="text-align: left; width: 240px; margin-left: auto; margin-right: auto;" border="1" cellpadding="2" cellspacing="2">
+                <tbody>
+                    <tr>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">Hits/Shots
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">Accuracy
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 32px;">Kills
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 32px;">Weapon
+                            <br>
+                        </td>
+                        <td style="vertical-align: top;">Kills
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">Accuracy
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">Hits/Shots
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 32px;">$p1gkills
+                            <br>
+                        </td>
+                        <td style="height: 32px; width: 32px; vertical-align: middle; text-align: center;"><img alt="Gauntlet" src="/images/gauntlet.png">
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 32px;">$p2gkills
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">$p1mghits/$p1mgshots
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">$p1mgacc
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 32px;">$p1mgkills
+                            <br>
+                        </td>
+                        <td style="height: 32px; width: 32px; vertical-align: middle; text-align: center;"><img alt="Machinegun" src="/images/machinegun.png">
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 32px;">$p2mgkills
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">$p2mgacc
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">$p2mghits/$p2mgshots
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">$p1sghits/$p1sgshots
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">$p1sgacc
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 32px;">$p1sgkills
+                            <br>
+                        </td>
+                        <td style="height: 32px; width: 32px; vertical-align: middle; text-align: center;"><img alt="Shotgun" src="/images/shotgun.png">
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 32px;">$p2sgkills
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">$p2sgacc
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">$p2sghits/$p2sgshots
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">$p1rlhits/$p1rlshots
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">$p1rlacc
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 32px;">$p1rlkills
+                            <br>
+                        </td>
+                        <td style="height: 32px; width: 32px; vertical-align: middle; text-align: center;"><img alt="Rocket Launcher" src="/images/rocketlauncher.png">
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 32px;">$p2rlkills
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">$p2rlacc
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">$p2rlhits/$p2rlshots
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">$p1lghits/$p1lgshots
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">$p1lgacc
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 32px;">$p1lgkills
+                            <br>
+                        </td>
+                        <td style="height: 32px; width: 32px; vertical-align: middle; text-align: center;"><img alt="Lightning Gun" src="/images/lightninggun.png">
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 32px;">$p2lgkills
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">$p2lgacc
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">$p2lghits/$p2lgshots
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">$p1rghits/$p1rgshots
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">$p1rgacc
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 32px;">$p1rgkills
+                            <br>
+                        </td>
+                        <td style="height: 32px; width: 32px; vertical-align: middle; text-align: center;"><img alt="Railgun" src="/images/railgun.png">
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 32px;">$p2rgkills
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">$p2rgacc
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">$p2rghits/$p2rgshots
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">$p1glhits/$p1glshots
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">$p1glacc
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 32px;">$p1glkills
+                            <br>
+                        </td>
+                        <td style="height: 32px; width: 32px; vertical-align: middle; text-align: center;"><img alt="Grenade Launcher" src="/images/grenadelauncher.png"></td>
+                        <td style="vertical-align: top; height: 32px; width: 32px;">$p2glkills
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">$p2glacc
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">$p2glhits/$p2glshots
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">$p1pghits/$p1pgshots
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">$p1pgacc
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 32px;">$p1pgkills
+                            <br>
+                        </td>
+                        <td style="height: 32px; width: 32px; vertical-align: middle; text-align: center;"><img alt="Plasma Gun" src="/images/plasmagun.png">
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 32px;">$p2pgkills
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">$p2pgacc
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">$p2pghits/$p2pgshots
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">$p1bfghits/$p1bfgshots
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">$p1bfgacc
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 32px;">$p1bfgkills
+                            <br>
+                        </td>
+                        <td style="height: 32px; width: 32px; vertical-align: middle; text-align: center;"><img alt="BFG" src="/images/bfg.png">
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 32px;">$p2bfgkills
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">$p2bfgacc
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">$p2bfghits/$p2bfgshots
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 32px;">$p1telekills
+                            <br>
+                        </td>
+                        <td style="height: 32px; width: 32px; vertical-align: middle; text-align: center;"><img alt="Teleporter" src="/images/telefrag.png">
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 32px;">$p2telekills
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">
+                            <br>
+                        </td>
+                        <td style="vertical-align: top; height: 32px; width: 40px;">
+                            <br>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <h1 style="text-align:right;">($p1efficiency) $p1damage</h1>
+            </div>
+            <div class="col-sm-4">
+                <img title="Efficiency" src="/images/efficiency.png" alt="Efficiency" style="display: block; margin-left: auto; margin-right: auto;">
+            </div>
+            <div class="col-sm-4">
+                <h1>($p2efficiency) $p2damage</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <h1 style="text-align:right;">$p1mhpickups</h1>
+            </div>
+            <div class="col-sm-4">
+                <img alt="Megahealth " title="Megahealth " src="/images/megahealth.png" style="display: block; margin-left: auto; margin-right: auto;">
+            </div>
+            <div class="col-sm-4">
+                <h1>$p2mhpickups</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <h1 style="text-align:right;">$p1rapickups</h1>
+            </div>
+            <div class="col-sm-4">
+                <img alt="Red Armor " title="Red Armor " src="/images/redarmor.png" style="display: block; margin-left: auto; margin-right: auto;">
+            </div>
+            <div class="col-sm-4">
+                <h1>$p2rapickups</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <h1 style="text-align:right;">$p1yapickups</h1>
+            </div>
+            <div class="col-sm-4">
+                <img alt="Yellow Armor " title="Yellow Armor " src="/images/yellowarmor.png" style="display: block; margin-left: auto; margin-right: auto;">
+            </div>
+            <div class="col-sm-4">
+                <h1>$p2yapickups</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <h1 style="text-align:right;">$p1gapickups</h1>
+            </div>
+            <div class="col-sm-4">
+                <img alt="Green Armor " title="Green Armor " src="/images/greenarmor.png" style="display: block; margin-left: auto; margin-right: auto;">
+            </div>
+            <div class="col-sm-4">
+                <h1>$p2gapickups</h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
