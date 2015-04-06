@@ -6,9 +6,9 @@ var express		= require('express'),
 
 // Application initialization
 var connection = mysql.createConnection({
-        host     : '192.168.56.2',
+        host     : '127.0.0.1',
         user     : 'msmith',
-        password : 'helloworld',
+        password : '4617618',
         multipleStatements : false,
         supportBigNumbers : true
     });
